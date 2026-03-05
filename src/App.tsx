@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Battery, Zap, ShieldAlert, Activity, Lightbulb, ArrowRight, ShieldCheck, ZapOff, Factory, Loader2, CheckCircle2 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import GeneratedImage from './components/GeneratedImage';
 
 export default function App() {
@@ -367,6 +368,7 @@ export default function App() {
           </p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
